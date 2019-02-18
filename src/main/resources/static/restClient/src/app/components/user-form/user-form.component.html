@@ -1,0 +1,55 @@
+<div class="container">
+  <form (ngSubmit)="processForm()">
+    <div class="form group">
+      <label for="name">Full Name</label>
+      <input
+        type="text"
+        name="name"
+        class="form-control"
+        [(ngModel)]="user.name"
+      />
+    </div>
+
+    <div class="form group">
+      <label for="username">User Name</label>
+      <input
+        type="text"
+        name="username"
+        class="form-control"
+        [(ngModel)]="user.username"
+      />
+    </div>
+
+    <div class="form group">
+      <label for="email">Email</label>
+      <input
+        type="text"
+        name="email"
+        class="form-control"
+        [(ngModel)]="user.email"
+      />
+    </div>
+
+    <div class="form group">
+      <label for="phone">Phone Number</label>
+      <input
+        type="text"
+        name="phone"
+        class="form-control"
+        [(ngModel)]="user.phone"
+      />
+    </div>
+
+    <div class="form group">
+      <label for="website">Website</label>
+      <input
+        type="text"
+        name="website"
+        class="form-control"
+        [(ngModel)]="user.website"
+      />
+    </div>
+
+    <input type="submit" value="save" class="btn btn-success" />
+  </form>
+</div>
